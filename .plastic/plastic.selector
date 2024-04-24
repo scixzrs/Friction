@@ -1,0 +1,4 @@
+repository "Friction@GameProject2D@cloud"
+  path "/"
+    br "/main"
+    co "/main"

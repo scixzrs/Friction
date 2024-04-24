@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Draggable
+  - GM
+  - Wooden
+  - Scale
+  - SFX
+  - Stone
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Backdrop
+  - Water
+  - UI
+  - Objects
+  - Ground
+  - Tap Layer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 2165302275
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Terrain
+    uniqueID: 1162514935
+    locked: 0
+  - name: Sprites
+    uniqueID: 3875333065
+    locked: 0
+  - name: Text
+    uniqueID: 3770569621
+    locked: 0
+  - name: UIPanel
+    uniqueID: 3859560657
+    locked: 0
