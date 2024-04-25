@@ -18,12 +18,16 @@ public class Dragging : MonoBehaviour
     public Canvas mycanvas;
     [SerializeField] TMP_InputField myInput;
     private float f;
+    private int availableHints;
+    private GM GMScript;
+    private Quaternion ogRotation;
 
     private void Start()
     {
         f = Random.Range(0, 360);
         platform.Rotate(0,0,f);
         myInput.text = f.ToString();
+        GMScript = FindObjectOfType<GM>().GetComponent<GM>();        ogRotation = gameObject.transform.rotation;
     }
     // Update is called once per frame
 
@@ -39,6 +43,7 @@ public class Dragging : MonoBehaviour
                 move.enabled = true;
             }*/
         }
+
     }
 
     private void OnMouseDown()
@@ -52,6 +57,18 @@ public class Dragging : MonoBehaviour
         else if (mycanvas.enabled) { mycanvas.enabled = !mycanvas.enabled; }
 
         GameObject.FindWithTag("GM").SendMessage("SetObject",this.gameObject);
+     }
+
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (PlayerPrefs.GetInt("availableHints") > 0)
+            {
+                GMScript.UseHint();
+                platform.rotation = ogRotation;
+            }
+        }
 
     }
 

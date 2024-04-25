@@ -21,6 +21,5 @@ public class BounceAnim : MonoBehaviour
     private void OnCollisionEnter2D()
     {
         animator.SetBool("isTriggered", true);
-        animator.GetComponent<BoxCollider2D>().enabled = false ;
     }
 }

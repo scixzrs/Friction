@@ -32,7 +32,7 @@ public class WeightCheck : MonoBehaviour
         if (other.gameObject.GetComponent<Weight>().objWeight != 0)
         {
             currentWeight = other.GetComponent<Weight>().objWeight;
-            weightText.text = currentWeight.ToString() + " kg";
+            weightText.text = "PASS";
         }
         sfx = GameObject.FindWithTag("SFX").GetComponent<AudioSource>();
 
@@ -44,7 +44,7 @@ public class WeightCheck : MonoBehaviour
         if (other.gameObject.GetComponent<Weight>().objWeight != 0)
         {
             currentWeight = 0f;
-            weightText.text = currentWeight.ToString() + " kg";
+            weightText.text = "ERROR";
         }
     }
 

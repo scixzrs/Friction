@@ -10,10 +10,10 @@ using UnityEngine.UI;
 
 public class Playerinput : MonoBehaviour
 {
-    [SerializeField] private Button resetButton,stopButton;
-    public Transform ballTransform;
+    [SerializeField] private Button resetButton,stopButton,playButton;
     public GameObject cannonballPrefab;
     private GameObject cannonball;
+    private GameObject trampoline;
     public Transform spawnPoint;
     private Vector2 launchVelocity;
     private bool isSpawned = false;
@@ -34,6 +34,10 @@ public class Playerinput : MonoBehaviour
         Time.timeScale = 0f;
         thinkMusic.Play();
         playMusic.GetComponent<AudioSource>().Stop();
+        if (GameObject.FindWithTag("Trampoline"))
+        {
+            trampoline = GameObject.FindWithTag("Trampoline"); 
+        }
     }
     public void Resume()
     {
@@ -47,8 +51,13 @@ public class Playerinput : MonoBehaviour
             gg.SendMessage("Activate",true);    //call Activate() in 'Dragging' script
             gg.SendMessage("Deactivate", false);
         }
+        playButton.gameObject.SetActive(false);
         stopButton.gameObject.SetActive(true);  //show edit button
-       
+        if (trampoline != null)
+        {
+            trampoline.GetComponent<Animator>().SetBool("isTriggered", false);
+        }
+
         if (!playMusicOn)
         {
             playMusic.Play();

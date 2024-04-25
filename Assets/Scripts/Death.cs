@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Death : MonoBehaviour
+public class Reward : MonoBehaviour
 {
     public MainMenu menu;
+    public int availableHints;
+    public int usedHints;
+
     // Start is called before the first frame update
     void Start()
     {

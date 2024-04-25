@@ -11,7 +11,7 @@ public class Instruction : MonoBehaviour
     }
     IEnumerator HideInstructions()
     {
-        yield return new WaitForSecondsRealtime(5f);
+        yield return new WaitForSecondsRealtime(4f);
         gameObject.SetActive(false);
     }
 

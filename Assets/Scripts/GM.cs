@@ -1,5 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
@@ -8,20 +11,32 @@ using UnityEngine.UI;
 public class GM : MonoBehaviour
 { Color color = new Color(0.9294118f, 0.9647059f, 0.4901961f, 1f);
     public GameObject currentObject;
-    float volume;
     int availableHints = 0;
     int usedHints;
     bool toggle;
+    public TextMeshProUGUI hintText;
+    public AudioSource thinkMusic;
+    public AudioSource playMusic;
+    public Button muteButton;
+    public Button unmuteButton;
+ 
     // Start is called before the first frame update
     void Start()
     {
-        volume = PlayerPrefs.GetFloat("masterVolume");
-        PlayerPrefs.SetInt("availableHints", availableHints);
+        availableHints = PlayerPrefs.GetInt("availableHints");
+
+    }
+    private void Awake()
+    {
+        toggle = Convert.ToBoolean(PlayerPrefs.GetInt("sound"));
+        
+        SetVolume();
     }
 
     // Update is called once per frame
     void Update()
     {
+        hintText.text = availableHints.ToString();
         if (Input.GetKeyDown(KeyCode.P))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -31,17 +46,49 @@ public class GM : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
+        SetVolume();
 
     }
+    void SetVolume()
+    {
+        if (toggle)
+        {
+            thinkMusic.volume = 0f;
+            playMusic.volume = 0f;
+            muteButton.gameObject.SetActive(!toggle);
+            unmuteButton.gameObject.SetActive(toggle);
+        }
+        else
+        {
+            thinkMusic.volume = 0.7f;
+            playMusic.volume = 0.7f;
+            muteButton.gameObject.SetActive(!toggle);
+            unmuteButton.gameObject.SetActive(toggle);
 
+        }
+        PlayerPrefs.Save();
+    }
     public void AddHint()
     {
-        availableHints++;
+        if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            availableHints++;
+            availableHints++;
+        } else
+        {
+            availableHints++;
+        }
+
         PlayerPrefs.SetInt("availableHints", availableHints);
     }
     public void UseHint()
     {
-        availableHints--;
+        if (availableHints > 0)
+        {
+            availableHints--;
+        }
+        else availableHints = 0;
+        
         PlayerPrefs.SetInt("availableHints", availableHints);
     }
 
@@ -77,5 +124,10 @@ public class GM : MonoBehaviour
             PlayerPrefs.SetInt("sound", 1);
             toggle = true;
         }
+    }
+
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.SetInt("availableHints", 0);
     }
 }

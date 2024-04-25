@@ -10,6 +10,7 @@ TagManager:
   - Scale
   - SFX
   - Stone
+  - Trampoline
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Objects
   - Ground
   - Tap Layer
-  - 
+  - Wood
   - 
   - 
   - 

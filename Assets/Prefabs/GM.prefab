@@ -45,3 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentObject: {fileID: 0}
+  hintText: {fileID: 0}
+  thinkMusic: {fileID: 0}
+  playMusic: {fileID: 0}
+  muteButton: {fileID: 0}
+  unmuteButton: {fileID: 0}
