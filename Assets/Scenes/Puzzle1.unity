@@ -247,11 +247,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
---- !u!95 &292872219 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3602370732356231080, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-  m_PrefabInstance: {fileID: 1745365851}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &300755048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5939541266411973534, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
@@ -1663,6 +1658,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: -4160805188441001513, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
+    - target: {fileID: 2141108633658757748, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2484842346102557167, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
       propertyPath: m_Size.x
       value: 3.4647613
@@ -1686,22 +1685,6 @@ PrefabInstance:
     - target: {fileID: 2484842346102557167, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2572964425162785143, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-      propertyPath: m_text
-      value: 2 kg
-      objectReference: {fileID: 0}
-    - target: {fileID: 2572964425162785143, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
-    - target: {fileID: 2572964425162785143, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -4160805188441001513, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
-    - target: {fileID: 2572964425162785143, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3703724818458886505, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
       propertyPath: m_Size.x
@@ -1751,30 +1734,6 @@ PrefabInstance:
       propertyPath: audio1
       value: 
       objectReference: {fileID: 639537718}
-    - target: {fileID: 6919207764265857709, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 292872219}
-    - target: {fileID: 6919207764265857709, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-      propertyPath: complete
-      value: 
-      objectReference: {fileID: 8300000, guid: 363b24cba01b4e6408e0ec429f46d34a, type: 3}
-    - target: {fileID: 6919207764265857709, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-      propertyPath: maxWeight
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7711890725076180402, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
-    - target: {fileID: 7711890725076180402, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -4160805188441001513, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
-    - target: {fileID: 7711890725076180402, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8014672704160623786, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
       propertyPath: m_Size.x
       value: 0.3246715
@@ -1807,9 +1766,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2141108633658757748, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 1550975150276612769, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}

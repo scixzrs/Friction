@@ -10,6 +10,7 @@ public class WeightCheck : MonoBehaviour
     float currentTime=0;
     public float maxWeight;
     public TextMeshPro weightText;
+    public TextMeshPro defaultText;
     public Button next;
     public Animator animator;
     //public SpriteRenderer proceed;
@@ -17,6 +18,11 @@ public class WeightCheck : MonoBehaviour
     public AudioClip complete;
     bool win;
 
+    private void Start()
+    {
+        weightText.gameObject.SetActive(false);
+        defaultText.gameObject.SetActive(true);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -33,6 +39,8 @@ public class WeightCheck : MonoBehaviour
         {
             currentWeight = other.GetComponent<Weight>().objWeight;
             weightText.text = "PASS";
+            defaultText.gameObject.SetActive(false);
+            weightText.gameObject.SetActive(true);
         }
         sfx = GameObject.FindWithTag("SFX").GetComponent<AudioSource>();
 
@@ -45,6 +53,8 @@ public class WeightCheck : MonoBehaviour
         {
             currentWeight = 0f;
             weightText.text = "ERROR";
+            weightText.gameObject.SetActive(false);
+            defaultText.gameObject.SetActive(true);
         }
     }
 

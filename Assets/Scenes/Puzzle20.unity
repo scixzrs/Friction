@@ -1101,7 +1101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6846965069181342775, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
       propertyPath: m_text
-      value: Main Menu
+      value: Thanks
       objectReference: {fileID: 0}
     - target: {fileID: 6894934069212382714, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
       propertyPath: m_Name
@@ -1113,19 +1113,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7799185930261222024, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7799185930261222024, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 414627463}
+      objectReference: {fileID: 1768235855}
     - target: {fileID: 7799185930261222024, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToScene
+      value: OnMouseDown
       objectReference: {fileID: 0}
     - target: {fileID: 7799185930261222024, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenu, Assembly-CSharp
+      value: LevelCheck, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7799185930261222024, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -1133,7 +1133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8728689739339741995, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1143,17 +1143,6 @@ PrefabInstance:
       addedObject: {fileID: 1300186514}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
---- !u!114 &414627463 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 135375029833033813, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
-  m_PrefabInstance: {fileID: 414627462}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c7498be8990c7143bbd7f9d80eeb42d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &414627464 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1202119092681961270, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
@@ -1596,7 +1585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2088752101769893572, guid: 9ddbfe2f69a67de44af761248a7a5c58, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -83
+      value: -83.000015
       objectReference: {fileID: 0}
     - target: {fileID: 2088752101769893572, guid: 9ddbfe2f69a67de44af761248a7a5c58, type: 3}
       propertyPath: m_AnchoredPosition.y

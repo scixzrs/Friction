@@ -254,6 +254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scale
       objectReference: {fileID: 0}
+    - target: {fileID: 2115383465473091808, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4160805188441001513, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
     - target: {fileID: 6919207764265857709, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
       propertyPath: next
       value: 
@@ -262,6 +266,10 @@ PrefabInstance:
       propertyPath: audio1
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8986466601151133167, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4160805188441001513, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -3441,23 +3449,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6735138081021272470, guid: a2359a5cd6bef2a4e9f7c251d9e3646d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5827584
+      value: 0.9845121
       objectReference: {fileID: 0}
     - target: {fileID: 6735138081021272470, guid: a2359a5cd6bef2a4e9f7c251d9e3646d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5827584
+      value: 0.9845121
       objectReference: {fileID: 0}
     - target: {fileID: 6735138081021272470, guid: a2359a5cd6bef2a4e9f7c251d9e3646d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5827584
+      value: 0.9845121
       objectReference: {fileID: 0}
     - target: {fileID: 6735138081021272470, guid: a2359a5cd6bef2a4e9f7c251d9e3646d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.79
+      value: 6.61
       objectReference: {fileID: 0}
     - target: {fileID: 6735138081021272470, guid: a2359a5cd6bef2a4e9f7c251d9e3646d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.05
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 6735138081021272470, guid: a2359a5cd6bef2a4e9f7c251d9e3646d, type: 3}
       propertyPath: m_LocalPosition.z
