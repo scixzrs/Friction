@@ -387,8 +387,8 @@ MonoBehaviour:
     - This
     playtest: You'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
+  m_sharedMaterial: {fileID: -4160805188441001513, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -709,11 +709,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 841666581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c7498be8990c7143bbd7f9d80eeb42d, type: 3}
+  m_Script: {fileID: 11500000, guid: f11cf03258025484983c39ce32283be4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playButton: {fileID: 2086793611}
-  editButton: {fileID: 2086793611}
 --- !u!1 &1136383188
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,8 +771,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
+  m_sharedMaterial: {fileID: -4160805188441001513, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1054,15 +1052,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1389286860538810156, guid: 995f3ee528550d24eb3999c45b31eaee, type: 3}
       propertyPath: m_Color.b
-      value: 0.6226415
+      value: 0.41509432
       objectReference: {fileID: 0}
     - target: {fileID: 1389286860538810156, guid: 995f3ee528550d24eb3999c45b31eaee, type: 3}
       propertyPath: m_Color.g
-      value: 0.6226415
+      value: 0.41509432
       objectReference: {fileID: 0}
     - target: {fileID: 1389286860538810156, guid: 995f3ee528550d24eb3999c45b31eaee, type: 3}
       propertyPath: m_Color.r
-      value: 0.6226415
+      value: 0.41509432
       objectReference: {fileID: 0}
     - target: {fileID: 2479232836691096980, guid: 995f3ee528550d24eb3999c45b31eaee, type: 3}
       propertyPath: m_Name
@@ -1275,9 +1273,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 841666586}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: GoToScene
-        m_Mode: 5
+        m_TargetAssemblyTypeName: StartAgain, Assembly-CSharp
+        m_MethodName: GoBack
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
