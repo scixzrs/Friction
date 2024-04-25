@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scale
       objectReference: {fileID: 0}
+    - target: {fileID: 2115383465473091808, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4160805188441001513, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
     - target: {fileID: 2484842346102557167, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
       propertyPath: m_Size.x
       value: 2.839445
@@ -238,6 +242,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 2.928369
       objectReference: {fileID: 0}
+    - target: {fileID: 8986466601151133167, guid: a1d487eaebb69df469f4fbb66bbef4d6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -4160805188441001513, guid: c1a4be027165ebb4f9c92a0010997016, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1133,7 +1141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8728689739339741995, guid: fbfed2f9d648ef24fa3f2719e21b38ea, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1786,7 +1794,7 @@ PrefabInstance:
     - target: {fileID: 5406047153342657509, guid: 9ddbfe2f69a67de44af761248a7a5c58, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 6456874251884481089, guid: cd947491a13509945aa1b644f9db3ef2, type: 3}
+      objectReference: {fileID: 6456874251884481089, guid: 40de9a8703e2e5a47882b0b86451c741, type: 3}
     - target: {fileID: 5611238763643291954, guid: 9ddbfe2f69a67de44af761248a7a5c58, type: 3}
       propertyPath: m_Sprite
       value: 

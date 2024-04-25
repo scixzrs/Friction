@@ -8,15 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
-    path: Assets/Scenes/Level1.unity
-    guid: 1949a23b41be25947aba5e57a72aa831
-  - enabled: 0
-    path: Assets/Scenes/Level2.unity
-    guid: d5b11ee14cb0f7c4c89c879042aab1a8
-  - enabled: 0
-    path: Assets/Scenes/Level3.unity
-    guid: fd09361668a243c4dbb8a6d8258d7e96
   - enabled: 1
     path: Assets/Scenes/Puzzle1.unity
     guid: db100bcbb50d1dc468ebf545cb304d47
@@ -25,7 +16,7 @@ EditorBuildSettings:
     guid: 5fba60543ab6bdc4691514bfa970fc27
   - enabled: 1
     path: Assets/Scenes/Puzzle3.unity
-    guid: 4dbd292d3cd981c49bc10590482f5db5
+    guid: 3b0f3ae5a2a0b3d4983bf2346017876f
   - enabled: 1
     path: Assets/Scenes/Puzzle4.unity
     guid: 518ca0b1bfc837d41ad610bdc45cf589
