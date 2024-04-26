@@ -36,6 +36,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading;
 
+
 #if USE_CSHARP_SQLITE
 using Sqlite3 = Community.CsharpSqlite.Sqlite3;
 using Sqlite3DatabaseHandle = Community.CsharpSqlite.Sqlite3.sqlite3;

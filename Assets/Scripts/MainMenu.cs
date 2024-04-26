@@ -44,7 +44,8 @@ public class MainMenu : MonoBehaviour
     {
         db = FindObjectOfType<Database>();
 
-        int lastLevel = db.GetCompletedLevel();
+        int lastLevel;
+        lastLevel = db.GetCompletedLevel();
         if (lastLevel != 0)
         {
             SceneManager.LoadScene(lastLevel + 1);

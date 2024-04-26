@@ -23,11 +23,11 @@ public class LevelCheck : MonoBehaviour
     public void OnMouseDown()
     {
         i = SceneManager.GetActiveScene().buildIndex;
-        db.LevelCompleted(i);       //To Database.cs > LevelCompleted(int levelNum)
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(i))
         {
             i++;
             SceneManager.LoadScene(i);
         }
+        db.LevelCompleted(i);       //To Database.cs > LevelCompleted(int levelNum)
     }
 }

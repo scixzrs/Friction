@@ -167,8 +167,9 @@ MonoBehaviour:
   rb: {fileID: 4112767217455293289}
   woodenCollider: {fileID: 0}
   woodenClip: {fileID: 8300000, guid: 8f8b6c712a661474a90d46b194eefb23, type: 3}
+  stoneClip: {fileID: 8300000, guid: e2371423ecf64c74b8a4973c7a200266, type: 3}
   scaleClip: {fileID: 8300000, guid: dee74e390dd1bb64d829938c88462764, type: 3}
-  terrainClip: {fileID: 0}
+  terrainClip: {fileID: 8300000, guid: 0f41b6a37791078419cffdd504f2d86b, type: 3}
   type: 1
 --- !u!1 &1526601329553499100
 GameObject:

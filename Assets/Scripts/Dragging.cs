@@ -11,8 +11,8 @@ public class Dragging : MonoBehaviour
     public Transform platform;
     private bool isClicked;
     float clickTime;
-    public SpriteRenderer rotate;
-    public SpriteRenderer move;
+    /*public SpriteRenderer rotate;
+    public SpriteRenderer move;*/
     public Collider2D[] mycoll;
     public Collider2D[] dragcoll;
     public Canvas mycanvas;
@@ -25,9 +25,9 @@ public class Dragging : MonoBehaviour
     private void Start()
     {
         f = Random.Range(0, 360);
-        platform.Rotate(0,0,f);
+        platform.Rotate(0, 0, f);
         myInput.text = f.ToString();
-        GMScript = FindObjectOfType<GM>().GetComponent<GM>();        ogRotation = gameObject.transform.rotation;
+        GMScript = FindObjectOfType<GM>().GetComponent<GM>(); ogRotation = gameObject.transform.rotation;
     }
     // Update is called once per frame
 
@@ -44,6 +44,7 @@ public class Dragging : MonoBehaviour
             }*/
         }
 
+        
     }
 
     private void OnMouseDown()
@@ -56,8 +57,12 @@ public class Dragging : MonoBehaviour
         }
         else if (mycanvas.enabled) { mycanvas.enabled = !mycanvas.enabled; }
 
-        GameObject.FindWithTag("GM").SendMessage("SetObject",this.gameObject);
-     }
+        if (mycanvas.enabled)
+        {
+            myInput.AddComponent<SelectOnEnable>();
+        }
+        GameObject.FindWithTag("GM").SendMessage("SetObject", this.gameObject);
+    }
 
     private void OnMouseOver()
     {
@@ -93,11 +98,13 @@ public class Dragging : MonoBehaviour
     }*/
     public void Activate(bool yeawhat)
     {
-        foreach (Collider2D cc in mycoll) {
+        foreach (Collider2D cc in mycoll)
+        {
             cc.enabled = yeawhat;
             cc.gameObject.GetComponent<CreateOutline>().enabled = true;
         }
-        foreach (Collider2D dc in dragcoll) {
+        foreach (Collider2D dc in dragcoll)
+        {
             dc.enabled = !yeawhat;
         }
 

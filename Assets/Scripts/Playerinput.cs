@@ -68,7 +68,6 @@ public class Playerinput : MonoBehaviour
         if (!isSpawned)
         {
             Fire();
-            print(angle);
         }
         else
         {
@@ -91,7 +90,6 @@ public class Playerinput : MonoBehaviour
         Vector2 shootDir = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
         rb.AddForce(speed2 * shootDir, ForceMode2D.Impulse);
         isSpawned = true;
-        print(shootDir);
     }
 
     public void ChangeVelocity(string str)

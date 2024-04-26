@@ -21,7 +21,6 @@ public class Magnet : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        collision.gameObject.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
         Vector2 v = collision.gameObject.GetComponent<Rigidbody2D>().velocity;
         v.x = 0;
         //collision.gameObject.GetComponent<Rigidbody2D>().velocity = v;

@@ -177,6 +177,7 @@ MonoBehaviour:
   rb: {fileID: 5891174286877467952}
   woodenCollider: {fileID: 0}
   woodenClip: {fileID: 0}
+  stoneClip: {fileID: 0}
   scaleClip: {fileID: 0}
   terrainClip: {fileID: 0}
   type: 0

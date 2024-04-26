@@ -254,6 +254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StaticPlatform (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
+      objectReference: {fileID: 0}
     - target: {fileID: 7931425571834800480, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -319,6 +323,10 @@ PrefabInstance:
     - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Name
       value: StaticPlatform (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
       objectReference: {fileID: 0}
     - target: {fileID: 7931425571834800480, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Sprite
@@ -1419,6 +1427,10 @@ PrefabInstance:
     - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Name
       value: StaticPlatform (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
       objectReference: {fileID: 0}
     - target: {fileID: 7931425571834800480, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Sprite
@@ -3176,6 +3188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StaticPlatform (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
+      objectReference: {fileID: 0}
     - target: {fileID: 7931425571834800480, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3215,6 +3231,10 @@ PrefabInstance:
     - target: {fileID: 1335189670028716934, guid: b20f772824374214f9407f8d1169a1c3, type: 3}
       propertyPath: m_Name
       value: DynamicPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479079215363340140, guid: b20f772824374214f9407f8d1169a1c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
       objectReference: {fileID: 0}
     - target: {fileID: 2621253657699527097, guid: b20f772824374214f9407f8d1169a1c3, type: 3}
       propertyPath: m_Sprite
@@ -3316,6 +3336,10 @@ PrefabInstance:
     - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Name
       value: StaticPlatform (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
       objectReference: {fileID: 0}
     - target: {fileID: 7931425571834800480, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Sprite
@@ -3742,6 +3766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StaticPlatform (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
+      objectReference: {fileID: 0}
     - target: {fileID: 7931425571834800480, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3807,6 +3835,10 @@ PrefabInstance:
     - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Name
       value: StaticPlatform (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
       objectReference: {fileID: 0}
     - target: {fileID: 7931425571834800480, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Sprite
@@ -3902,6 +3934,10 @@ PrefabInstance:
     - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Name
       value: StaticPlatform (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
       objectReference: {fileID: 0}
     - target: {fileID: 7931425571834800480, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Sprite
@@ -4339,6 +4375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DynamicPlatform (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1479079215363340140, guid: b20f772824374214f9407f8d1169a1c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
+      objectReference: {fileID: 0}
     - target: {fileID: 2621253657699527097, guid: b20f772824374214f9407f8d1169a1c3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4496,6 +4536,10 @@ PrefabInstance:
     - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Name
       value: StaticPlatform (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
       objectReference: {fileID: 0}
     - target: {fileID: 7931425571834800480, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Sprite

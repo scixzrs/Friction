@@ -1027,6 +1027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StaticPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 6842159073431074741, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
+      propertyPath: m_TagString
+      value: Stone
+      objectReference: {fileID: 0}
     - target: {fileID: 7931425571834800480, guid: 9bff1f919c64c4a40b2108e39ed247c3, type: 3}
       propertyPath: m_Sprite
       value: 

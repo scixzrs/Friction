@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [ExecuteInEditMode]
 public class Weight : MonoBehaviour
@@ -14,9 +15,10 @@ public class Weight : MonoBehaviour
     public GameObject woodenCollider;
     private AudioSource audioSource;
     public AudioClip woodenClip;
+    public AudioClip stoneClip;
     public AudioClip scaleClip;
     public AudioClip terrainClip;
-    public enum objType { box, ball};
+    public enum objType { box, ball };
     public objType type;
     private bool isPlaying;
 
@@ -26,7 +28,10 @@ public class Weight : MonoBehaviour
         //objText.text = objWeight.ToString() + "\nkg";
         //rb.mass = objWeight;
         //transform.localScale = Vector3.one * (objWeight/ 5)
-        audioSource = GameObject.FindWithTag("SFX").GetComponent<AudioSource>();
+        if (SceneManager.GetActiveScene().buildIndex != 0)
+        {
+            audioSource = GameObject.FindWithTag("SFX").GetComponent<AudioSource>();
+        }
     }
 
     private void OnValidate()
@@ -35,7 +40,7 @@ public class Weight : MonoBehaviour
         rb.mass = objWeight;
         if (type == objType.box)
         {
-            transform.localScale = Vector3.one * (objWeight/2)*dampingSize ;
+            transform.localScale = Vector3.one * (objWeight / 2) * dampingSize;
         }
     }
 
@@ -46,7 +51,7 @@ public class Weight : MonoBehaviour
         rb.mass = objWeight;
         if (type == objType.box)
         {
-            transform.localScale = Vector3.one * (objWeight/2)*dampingSize ;
+            transform.localScale = Vector3.one * (objWeight / 2) * dampingSize;
         }
     }
 
@@ -55,7 +60,12 @@ public class Weight : MonoBehaviour
         if (collision.collider.CompareTag("Wooden") && !audioSource.isPlaying)
         {
             audioSource.PlayOneShot(woodenClip);
-        } else if (collision.collider.CompareTag("Scale") && !isPlaying)
+        }
+        if (collision.collider.CompareTag("Stone") && !audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(stoneClip);
+        }
+        else if (collision.collider.CompareTag("Scale") && !isPlaying)
         {
             audioSource.PlayOneShot(scaleClip);
         }

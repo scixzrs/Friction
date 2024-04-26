@@ -27,7 +27,6 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
-
 #pragma warning disable 1591 // XML Doc Comments
 
 namespace SQLite
